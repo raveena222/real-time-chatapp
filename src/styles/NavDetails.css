@@ -1,0 +1,33 @@
+ul{
+    list-style: none;
+    margin-left: 0;
+    padding-left: 0;
+  }
+  
+  .nav-line{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: rgb(28, 26, 35);
+    padding-left: 15px;
+    padding-right: 15px;
+   
+  }
+  i{
+    font-size: 22px;
+    color: rgb(212, 211, 211);
+  }
+  
+  .nav-line-upper{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    gap: 25px;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .App{
+    display: flex;
+    flex-direction: row;
+  }
