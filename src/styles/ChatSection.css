@@ -1,5 +1,54 @@
 body{
   color: aliceblue;
-  background-color: #414141;
+  background-color: hsl(0, 2%, 17%);
 }
+.chat-section{
+  display: flex;
+  flex: 2.6;
+  display: grid;
+  grid-template-rows:60px 1fr 60px;
+}
+.top-bar{
+  background-color: hsl(0, 3%, 25%);
+  display: flex;
+  align-items: center;
+  
+}
+.allChats{
+  background-color: hsl(0, 2%, 17%);
+}
+.userName{
+  font-size: 16px;
+
+}
+.turtle{
+  height: 40px;
+  width: 40px;
+  margin: 16px;
+  border-radius: 20px;
+}
+.chatinput{
+  display: grid;
+  align-items: center;
+  grid-template-columns:1px 1fr 40px 40px;
+}
+.chatInput{
+  width: 92.5%;
+  height: 35px;
+  outline: none;
+  margin-left: 18px;
+  border-radius: 10px;
+  border: none;
+  padding-left: 38px;
+  font-size: 14.5px;
+  background-color: hsl(0, 3%, 25%);
+  color: whitesmoke;
+}
+.smile{
+  position: relative;
+  margin-left: 20px;
+  left: 8px ;
+}
+
+
 
