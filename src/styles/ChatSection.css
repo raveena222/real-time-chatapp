@@ -1,6 +1,7 @@
-.input-bars {
-  display: flex;
+body{
+  color: aliceblue;
+  background-color: #414141;
 }
-.chat-section {
-  flex: 2;
+.top-bar{
+  width: 75%;
 }
