@@ -1,0 +1,48 @@
+.Profile {
+  flex: 1;
+  background-color: rgb(8, 8, 20);
+  color: white;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  justify-content: center;
+  align-items: center;
+  overflow: auto;
+}
+
+.Arrow{
+  font-size: 30px;
+  position: relative;
+  top: -5px;
+  left: -160px;
+  color: lightgray;
+}
+
+.im2 {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+.user-name,
+.About,
+.emailId {
+  display: flex;
+  gap: 13px;
+  align-items: center;
+}
+
+.profile-icons {
+  font-size: 25px;
+  color: lightgray;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  margin-left: 16%;
+  width: 84%;
+  gap: 25px;
+}

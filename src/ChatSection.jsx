@@ -2,7 +2,7 @@ import "./styles/ChatSection.css";
 
 function ChatSection(){
     return(
-        <div>
+        <div className="chat-section">
             <div>
 
             </div>

@@ -1,4 +1,6 @@
-input{
-    display: flex;
-    flex-grow: 1;
+.input-bars {
+  display: flex;
+}
+.chat-section {
+  flex: 2;
 }
