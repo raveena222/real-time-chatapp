@@ -1,22 +1,22 @@
 import "./styles/NavDetails.css";
 
-function NavDetails() {
+function NavDetails({ handleTog }) {
   return (
-    <div className="nav-line">
+    <div className="blue-line">
       <ul className="nav-line-upper">
-        <li>
+        <li style={{ cursor: "pointer" }} onClick={handleTog}>
           <i className="fa-solid fa-user"></i>
         </li>
-        <li>
+        <li style={{ cursor: "pointer" }}>
           <i className="fa-solid fa-message"></i>
         </li>
-        <li>
+        <li style={{ cursor: "pointer" }}>
           <i className="fa-solid fa-gear"></i>
         </li>
       </ul>
       <ul>
-        <li>
-        <i className="fa-solid fa-arrow-right-from-bracket"></i>
+        <li style={{ cursor: "pointer" }}>
+          <i className="fa-solid fa-arrow-right-from-bracket"></i>
         </li>
       </ul>
     </div>
