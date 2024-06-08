@@ -40,9 +40,9 @@ function Sidebar({ handleTog }) {
           placeholder="Search or start a new chat"
           onChange={(e) => handleSearch(e.target.value)}
         />
-        <button className="plus-button">
+        {/* <button className="plus-button">
           <FontAwesomeIcon icon={faPlus} />
-        </button>
+        </button> */}
       </div>
 
       <div
