@@ -1,5 +1,4 @@
 import "./App.css";
-import NavBar from "./NavBar";
 import "./styles/responsive.css";
 import { useState } from "react";
 import Home from "./Home";
@@ -14,7 +13,6 @@ function App() {
   return (
     <>
       <div className="App">
-        <NavBar />
         <Home handleTog={handleTog} tog={tog} />
       </div>
     </>

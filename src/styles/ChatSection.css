@@ -3,79 +3,164 @@ body{
   background-color: hsl(0, 2%, 17%);
 }
 .chat-section{
-  display: flex;
   flex: 2.2;
-  display: grid;
-  grid-template-rows:60px 1fr 60px;
+  height: 100vh;
+  display: flex;
+  flex-direction:column; 
 }
 .top-bar{
   background-color: hsl(0, 3%, 25%);
   display: flex;
   align-items: center;
   
+  .user{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    .turtle {
+      height: 40px;
+      width: 40px;
+      margin: 12px;
+      border-radius: 20px;
+      object-fit: cover;
+    }
+
+    .text {
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        justify-content: center ;
+        gap: 0px;
+        .userName {
+          font-size: 18px;
+          margin-bottom: 2px;
+          font-weight: 500;
+        }
+        .lastseen{
+          font-size: 14px;
+
+        }
+      }
+    
+      
+  }
+ 
+  
 }
 .allChats{
+  flex: 1;
   background-color: hsl(0, 2%, 17%);
+  overflow: auto;
   display: flex;
-  flex-direction: column-reverse;
-  align-items: flex-end;
-  overflow-y: auto;
-}
-.userName{
-  font-size: 16px;
+  flex-direction: column;
+  
+  
+    .chatYou {
+      max-width: 60%;
+      padding: 10px 10px 10px 10px;
+      margin: 5px 0;
+      border-radius: 10px;
+      position: relative;
+      background-color: hsl(300, 16%, 26%);
+      font-size: 16px;
+      display: flex;
+  
+      .turtle-chat {
+        height: 40px;
+        width: 40px;
+        margin: 5px;
+        border-radius: 20px;
+        object-fit: cover;
+      }
+  
+      p {
+        margin: 10px;
+      }
+  
+      span {
+        font-size: 13px;
+        margin-left: 10px;
+        margin-bottom: 10px;
+      }
+    }
 
+    .chatMe {
+      max-width: 60%;
+      margin: 5px 0;
+      border-radius: 10px;
+      padding: 10px 10px 10px 10px;
+      background-color: hsl(300, 16%, 26%);
+      align-self: flex-end;
+
+      p {
+        margin: 10px;
+      }
+
+      span {
+        font-size: 13px;
+        margin-left: 10px;
+        margin-bottom: 10px;
+      }
+    }
 }
+
 .turtle{
   height: 40px;
   width: 40px;
   margin: 16px;
   border-radius: 20px;
+  object-fit: cover;
 }
 .chatinput{
-  display: grid;
+  padding: 18px 0;
+  background-color: hsl(0, 3%, 25%); ;
+  display: flex;
   align-items: center;
-  grid-template-columns:1px 1fr 40px 40px;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 15px;
+  .clip{
+    cursor: pointer;
+  }
+  .paper{
+    cursor: pointer;
+    margin-right: 20px;
+  }
 }
 .chatInput{
   width: 92.5%;
   height: 35px;
-  outline: none;
-  margin-left: 18px;
+  outline: none; 
   border-radius: 10px;
   border: none;
-  padding-left: 38px;
+  padding-left: 20px;
   font-size: 14.5px;
-  background-color: hsl(0, 3%, 25%);
+  background-color: hsla(0, 4%, 37%, 0.832);
   color: whitesmoke;
 }
 .smile{
   position: relative;
-  margin-left: 20px;
-  left: 8px ;
   cursor: pointer;
-}
-.clip .paper{
-  cursor: pointer;
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+  .pickEmoji{
+    position: absolute;
+    left: 0;
+    bottom:50px;
+  }
 }
 
 .display-text {
   max-width: 60%;
   padding: 10px 15px;
-  margin: 5px 0;
+  margin: 0;
   border-radius: 10px;
-  position: relative;
   background-color: hsl(300, 16%, 26%);
   /* align-self: flex-end; */
   margin-right: 20px;
 }
 
-.display-text::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  right: -10px;
-  width: 0;
-  height: 0;
-  border-top: 10px solid transparent;
-  border-bottom: 10px solid transparent;
-}
+
+
