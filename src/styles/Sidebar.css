@@ -1,9 +1,13 @@
 .sidebar-chat {
+  display: flex;
+  flex-direction: column;
   flex: 1;
   background-color: rgb(8, 8, 20);
   color: white;
   height: 100vh;
-  overflow: auto;
+  padding: 0px 0px;
+  margin: 0px 0px;
+
 }
 
 .chats {
@@ -18,10 +22,11 @@
   gap: 15px;
   margin-bottom: 20px;
   padding-left: 25px;
+  padding-right: 20px;
 }
 
 .input-bar {
-  width: 65%;
+  width: 76%;
   border: 1px solid #ccc;
   border-radius: 35px;
   font-size: 16px;
@@ -31,18 +36,6 @@
   padding: 12px 20px 12px 40px;
   background-size: 20px 20px;
   outline: none;
-}
-
-.plus-button {
-  min-width: 44px;
-  border-radius: 50%;
-  border: none;
-  background-color: rgb(77, 255, 77);
-  color: white;
-  font-weight: 700;
-  font-size: 20px;
-  margin-right: 25px;
-  cursor: pointer;
 }
 
 .bars {
@@ -59,6 +52,11 @@
   justify-content: space-between;
 }
 
+.header-side{
+  background-color: rgb(42, 42, 43);
+  height: 140px;
+}
+
 .toggle:hover {
   cursor: pointer;
 }
@@ -69,3 +67,11 @@
   top: 50px;
   z-index: 1;
 }
+
+
+
+@media only screen and (min-width: 768px) {
+  .bars {
+      display: none;
+    }  
+  }

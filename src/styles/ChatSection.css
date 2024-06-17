@@ -163,4 +163,8 @@ body{
 }
 
 
-
+@media only screen and (max-width: 768px) {
+  .chat-section {
+      display: none;
+    }  
+  }

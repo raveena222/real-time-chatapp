@@ -1,0 +1,70 @@
+.settings{
+  flex: 1;
+  background-color: rgb(68, 73, 75);
+  color: white;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: auto;
+}
+
+.file-name{
+    color: white;
+}
+  
+  .profile-icons {
+    font-size: 25px;
+    color: lightgray;
+  }
+  
+  .containers {
+    display: flex;
+    flex-direction: column;
+    margin-left: 16%;
+    width: 84%;
+    gap: 15px;
+  }
+
+  .save{
+    border: none;
+    background-color: rgb(8, 81, 199);
+    color: white;
+    padding: 10px 17px 10px 17px;
+    font-weight: 500;
+    font-size: 18px;
+    border-radius: 6px;
+    margin-top: 20px;
+  }
+
+  .edit{
+    color: white;
+    font-size: 20px;
+  }
+
+  .ima1{
+    margin-left: 90px;
+    margin-bottom: 15px;
+  }
+
+  input[type=file]::file-selector-button {
+    margin-right: 20px;
+    border: none;
+    background: #084cdf;
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: #fff;
+    cursor: pointer;
+    transition: background .2s ease-in-out;
+  }
+  input[type=file]::file-selector-text {
+    
+    color: #fff;
+    cursor: pointer;
+
+  }
+  
+  input[type=file]::file-selector-button:hover {
+    background: #0d45a5;
+  }
