@@ -20,12 +20,7 @@
     "fontawesome": "^5.6.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-<<<<<<< HEAD
     "react-router-dom": "^6.23.1"
-=======
-    "react-router-dom": "^6.23.1",
-    "split-pane-react": "^0.1.3"
->>>>>>> 66fbdb00c3e5c2b7db9c08ec7efe69846db6e027
   },
   "devDependencies": {
     "@types/react": "^18.2.66",
