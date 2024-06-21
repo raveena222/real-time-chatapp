@@ -38,7 +38,7 @@ function ChatSection(){
                     <img src={turtle} className="turtle"/>
                     <div className="text">
                         <span className="userName">Turtle</span>
-                        <span className="lastseen">10 mins ago</span>    
+                        <span className="lastseen">100 years ago</span>    
                     </div>
                 </div>
             </div> 

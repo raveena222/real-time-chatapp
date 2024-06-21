@@ -4,8 +4,9 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faPlus, faXmark } from "@fortawesome/free-solid-svg-icons";
 import { useState } from "react";
 import { obj } from "./data";
+import { Link } from "react-router-dom";
 
-function Sidebar({ handleTog }) {
+function Sidebar() {
   const [isOpen, setIsOpen] = useState(false);
 
   const [search, setSearch] = useState([]);
@@ -23,6 +24,7 @@ function Sidebar({ handleTog }) {
 
   return (
     <div className="sidebar-chat">
+      <div className="header-side">
       <div className="side-header">
         <div className="chats">Chats</div>
         <div className="bars" onClick={toggleNavbar}>
@@ -40,9 +42,6 @@ function Sidebar({ handleTog }) {
           placeholder="Search or start a new chat"
           onChange={(e) => handleSearch(e.target.value)}
         />
-        {/* <button className="plus-button">
-          <FontAwesomeIcon icon={faPlus} />
-        </button> */}
       </div>
 
       <div
@@ -51,9 +50,11 @@ function Sidebar({ handleTog }) {
           height: "0.1px",
           backgroundColor: "gray",
           marginLeft: "8%",
-          marginBottom: "20px",
+          marginBottom: "10px",
         }}
       ></div>
+
+</div>
 
       {isOpen && (
         <div
@@ -66,10 +67,13 @@ function Sidebar({ handleTog }) {
             borderRadius: "9px",
           }}
         >
-          <p className="toggle" onClick={handleTog}>
+          <Link style={{textDecoration:"none"}}to="/real-time-chatapp/profile">
+          <p className="toggle" >
             Profile
           </p>
-          <p className="toggle">Settings</p>
+          </Link>
+          <Link style={{textDecoration:"none"}} to="/real-time-chatapp/settings">
+          <p className="toggle">Settings</p></Link>
           <p className="toggle" style={{ color: "red" }}>
             Log Out
           </p>

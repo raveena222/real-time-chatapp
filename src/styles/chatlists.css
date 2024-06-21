@@ -1,9 +1,5 @@
 .chatlistbox {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  gap: 5px;
+  overflow: auto;
 }
 
 ::-webkit-scrollbar {
@@ -25,18 +21,19 @@
   gap: 14px;
   color: white;
   cursor: pointer;
-  border: 1px solid rgba(129, 125, 125, 0.3);
-  border-radius: 10px;
-  width: 96%;
-  height: 70px;
+  border: 1px solid rgba(129, 125, 125, 0.2);
+  border-right: none;
+  flex-grow: 1;
+  height: 47px;
+  padding: 10px;
 
   &:hover {
     background-color: #201f33;
   }
 
   .im1 {
-    width: 45px;
-    height: 45px;
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
     object-fit: cover;
     margin-left: 5px;

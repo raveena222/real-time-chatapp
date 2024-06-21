@@ -7,13 +7,16 @@ import {
   faCircleExclamation,
   faArrowLeft,
 } from "@fortawesome/free-solid-svg-icons";
+import { Link } from "react-router-dom";
 
-function Profile({handleTog}) {
+function Profile() {
   return (
     <>
   
     <div className="Profile">
-    <FontAwesomeIcon onClick={handleTog} className="Arrow" icon={faArrowLeft} />
+      <Link to="/real-time-chatapp">
+    <FontAwesomeIcon  className="Arrow" icon={faArrowLeft} />
+    </Link>
       <div className="dp-box">
         <img className=" im2" src={download} alt="Profile Image" />
       </div>
@@ -33,7 +36,7 @@ function Profile({handleTog}) {
           </div>
           <div>
             <div style={{ color: "lightgray", fontSize: "13px" }}>Name</div>
-            <div style={{ color: "white", marginTop: "2px" }}>Ritu Raj</div>
+            <div style={{ color: "white", marginTop: "2px" }}>Your Name</div>
           </div>
         </div>
 
@@ -54,7 +57,7 @@ function Profile({handleTog}) {
           </div>
           <div>
             <div style={{ color: "lightgray", fontSize: "13px" }}>About</div>
-            <div>India is a big country</div>
+            <div>Description about yourself</div>
           </div>
         </div>
 
@@ -72,7 +75,7 @@ function Profile({handleTog}) {
           </div>
           <div>
             <div style={{ color: "lightgray", fontSize: "13px" }}>Email</div>
-            <div>code@example.com</div>
+            <div>Your Email</div>
           </div>
         </div>
       </div>
