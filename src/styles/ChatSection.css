@@ -58,14 +58,10 @@ body{
   
     .chatYou {
       max-width: 60%;
-      padding: 10px 10px 10px 10px;
-      margin: 5px 0;
-      border-radius: 10px;
       position: relative;
-      background-color: hsl(300, 16%, 26%);
       font-size: 16px;
       display: flex;
-  
+      gap: 5px;
       .turtle-chat {
         height: 40px;
         width: 40px;
@@ -73,16 +69,22 @@ body{
         border-radius: 20px;
         object-fit: cover;
       }
-  
-      p {
-        margin: 10px;
+      .chatText{
+        background-color: hsl(300, 16%, 26%);
+        padding: 10px 10px 10px 10px;
+        margin: 5px 0;
+        border-radius: 10px;
+        p {
+            margin: 10px;
+          }
+        
+          span {
+            font-size: 13px;
+            margin-left: 10px;
+            margin-bottom: 10px;
+          }
       }
-  
-      span {
-        font-size: 13px;
-        margin-left: 10px;
-        margin-bottom: 10px;
-      }
+     
     }
 
     .chatMe {

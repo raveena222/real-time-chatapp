@@ -2,14 +2,20 @@ import "./styles/ChatSection.css";
 import turtle from "./assets/turtle.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPaperPlane, faPaperclip, faFaceSmile } from "@fortawesome/free-solid-svg-icons";
-import { useState} from "react";
+import { useEffect, useRef, useState} from "react";
 import EmojiPicker from "emoji-picker-react";
 
 function ChatSection(){
     
     const [inputText, setInputText] = useState('');
     const [divElements, setDivElements] = useState([]);  
-    const [open, setOpen] = useState(false);  
+    const [open, setOpen] = useState(false); 
+    
+    const endRef = useRef(null);
+
+    useEffect(()=>{
+        endRef.current?.scrollIntoView ({behavior:"smooth"});
+    },[]);
     
     const handleEmoji =(e) =>{
         setInputText((prev)=> prev +e.emoji);
@@ -41,7 +47,7 @@ function ChatSection(){
                 
                     <div className="chatYou">
                         <img src={turtle} className="turtle-chat"/>
-                        <div>
+                        <div className="chatText">
                             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam cumque, quasi nulla iure qui enim dolore modi pariatur, atque aut minus, repudiandae iste delectus quisquam fugit laudantium suscipit quos! Voluptatibus?</p>
                         <span>1 min ago</span>
                         </div>
@@ -53,7 +59,7 @@ function ChatSection(){
                     </div>
                     <div className="chatYou">
                         <img src={turtle} className="turtle-chat"/>
-                        <div>
+                       <div className="chatText">
                             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam cumque, quasi nulla iure qui enim dolore modi pariatur, atque aut minus, repudiandae iste delectus quisquam fugit laudantium suscipit quos! Voluptatibus?</p>
                         <span>1 min ago</span>
                         </div>
@@ -64,7 +70,7 @@ function ChatSection(){
                     </div>
                     <div className="chatYou">
                         <img src={turtle} className="turtle-chat"/>
-                        <div>
+                        <div className="chatText">
                             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam cumque, quasi nulla iure qui enim dolore modi pariatur, atque aut minus, repudiandae iste delectus quisquam fugit laudantium suscipit quos! Voluptatibus?</p>
                         <span>1 min ago</span>
                         </div>
@@ -75,7 +81,7 @@ function ChatSection(){
                     </div>
                     <div className="chatYou">
                         <img src={turtle} className="turtle-chat"/>
-                        <div>
+                        <div className="chatText">
                             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam cumque, quasi nulla iure qui enim dolore modi pariatur, atque aut minus, repudiandae iste delectus quisquam fugit laudantium suscipit quos! Voluptatibus?</p>
                         <span>1 min ago</span>
                         </div>
@@ -86,7 +92,7 @@ function ChatSection(){
                     </div>
                     <div className="chatYou">
                         <img src={turtle} className="turtle-chat"/>
-                        <div>
+                        <div className="chatText">
                             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam cumque, quasi nulla iure qui enim dolore modi pariatur, atque aut minus, repudiandae iste delectus quisquam fugit laudantium suscipit quos! Voluptatibus?</p>
                         <span>1 min ago</span>
                         </div>
@@ -100,6 +106,7 @@ function ChatSection(){
                         {text}
                     </div>
                     ))}
+                <div ref={endRef}></div>
                 
             </div>  
             
