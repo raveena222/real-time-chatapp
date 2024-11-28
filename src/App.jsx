@@ -1,5 +1,4 @@
 import "./App.css";
-import "./styles/responsive.css";
 import { useEffect } from "react";
 import Home from "./Home";
 import LoginPage from "./userAuth/LoginPage.jsx";
@@ -28,10 +27,12 @@ function App() {
 
   return (
     <>
-      {/* <div className="App"> */}
-         {user ? (<Home/>)
-         :(<LoginPage/>)}
-      {/* </div> */}
+      <div className="App">
+         {/* {user ? (<Home/>)
+         :(<LoginPage/>)} */}
+
+         <Home/>
+         </div>
       <Notification/>
     </>
   );
